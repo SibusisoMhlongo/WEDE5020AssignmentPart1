@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mabel's Dough / Contact</title>
+</head>
+<body>
+    <header>
+        <h1>Mabel's Dough</h1>
+        <nav aria-label="Main">
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="order.html">Order</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contact US</h2>
+        <P>123 Baker street, Heidelberg, South Africa</P>
+        <p>Phone: +27 66 912 9887 / Email: hello@mabelsdough.co.za</p>
+
+        <form action="/send-message" method="post">
+            <label for="cname">Name</label>
+            <input id="cname" name="name" type="text" required>
+
+            <label for="cemail">Email</label>
+            <input id="cemail" name="email" type="email" required>
+
+            <label for="cmsg">Message</label>
+            <textarea id="cmsg" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <section>
+            <h3>Business Hours</h3>
+            <p>Mon-Sat: 07:00-17:00</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year">2025</span> Mabel's Dough</p>
+    </footer>
+    
+</body>
+</html>

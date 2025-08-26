@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mabel's Dough / Order Online</title>
+</head>
+<body>
+    <header>
+        <h1>Mabel's Dough</h1>
+        <nav aria-label="Main">
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="order.html" aria-current="page">Order</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Pre-Order</h2>
+        <p>Submit you pre-order request. We will confirm by email or phone.</p>
+
+        <form action="/submit-order" method="post">
+            <fieldset>
+                <legend>Contact Details</legend>
+                <label for="name">Full Name</label>
+                <input id="name" name="name" type="text" required>
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required>
+
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Order Details</legend>
+                <label for="item">Item</label>
+                <input id="item" name="item" type="text" placeholder="e.g., Sourdough Loaf" required>
+
+                <label for="qty">Quantity</label>
+                <input id="qty" name="quantity" type="number" min="1" value="1" required>
+
+                <label for="date">Pickup/Delivery Date</label>
+                <input id="date" name="date" type="date" required>
+
+                <label for="notes">Notes</label>
+                <textarea id="notes" name="notes" rows="4" placeholder="Allergies, message on cake, etc."></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Fulfilment</legend>
+                <label><input type="radio" name="fulfilment" value="pickup" checked> Pickup</label>
+                <label><input type="radio" name="fulfilment" value="delivery"> Delivery</label>
+            </fieldset>
+
+            <button type="submit">Send Order Request</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="year">2025</span> Mabel's Dough</p>
+    </footer>
+</body>
+</html>
